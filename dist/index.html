@@ -1,0 +1,181 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 2</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"/>
+</head>
+<body>
+    <!-- top header -->
+    <div class="bg-white border-b border-gray-100 py-3 px-0">
+        <div class="container flex items-center justify-between">
+            <div class="flex items-center">
+                <a href="#" class="text-sm capitalize leading-6 hover:text-primary">
+                    <span class="mr-1">
+                        <i class="far fa-envelope"></i>
+                    </span>
+                    rafcart@support.com
+                </a>
+            </div>
+            <div class="flex items-center">
+                <a href="#" class="text-sm capitalize leading-6 hover:text-primary ml-4">
+                    track my order
+                </a>
+                <a href="#" class="text-sm capitalize leading-6 hover:text-primary ml-4">
+                    login / register
+                </a>
+                <a href="#" class="text-sm capitalize leading-6 hover:text-primary ml-4">
+                    language
+                </a>
+                <a href="#" class="text-sm capitalize leading-6 hover:text-primary ml-4">
+                    currency
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- top header end -->
+    <!-- header -->
+    <header class="py-4 shadow-sm bg-white">
+        <div class="container flex items-center justify-between">
+            <!-- logo -->
+            <a href="#">
+                <img src="imgs/logo.svg" alt="" class="w-32">
+            </a>
+
+            <!-- searchbar -->
+            <div class="flex w-full max-w-xl relative">
+                <span class="absolute left-4 top-4 text-lg text-secondary">
+                    <i class="fas fa-search"></i>
+                </span>
+                <input type="text" class="w-full border border-primary border-r-0 pl-12 py-3 pr-3 rounded-l-md focus:outline-none" placeholder="Search">
+                <button class="bg-primary border border-primary text-white px-8 rounded-r-md">Search</button>
+            </div>
+
+            <!-- icons -->
+            <div class="flex items-center space-x-4">
+                <a href="" class="text-center text-secondary hover:text-primary transition relative">
+                    <div class="text-3xl">
+                        <i class="lar la-heart"></i>
+                    </div>
+                    <div class="text-xs leading-3">Wish List</div>
+                    <span class="absolute right-0 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">8</span>
+                </a>
+                <a href="" class="text-center text-secondary hover:text-primary transition relative">
+                    <div class="text-3xl">
+                        <i class="las la-shopping-cart"></i>
+                    </div>
+                    <div class="text-xs leading-3">Cart</div>
+                    <span class="absolute -right-3 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">8</span>
+                </a>
+                <a href="" class="text-center text-secondary hover:text-primary transition relative">
+                    <div class="text-3xl">
+                        <i class="las la-user-alt"></i>
+                    </div>
+                    <div class="text-xs leading-3">Account</div>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- navbar -->
+    <nav class="bg-secondary">
+        <div class="container flex">
+            <!-- all categories -->
+            <div class="px-8 py-4 bg-primary flex items-center cursor-pointer relative group">
+                <span class="text-white">
+                    <i class="fas fa-bars"></i>
+                </span>
+                <span class="capitalize ml-2 text-white">all categories</span>
+
+                <div class="absolute w-full left-0 top-full bg-white shadow-md py-0 divide-y divide-gray-300 divide-dashed opacity-0 group-hover:opacity-100 transition duration-300 invisible group-hover:visible">
+                    <!-- single category -->
+                    <a href="#" class="px-6 py-3 flex items-center hover:bg-gray-100 transition">
+                        <i class="las la-shoe-prints text-xl text-light-primary"></i>
+                        <span class="ml-6 text-secondary text-sm">Shoes</span>
+                    </a>
+                    <!-- single category end -->
+                    <!-- single category -->
+                    <a href="#" class="px-6 py-3 flex items-center hover:bg-gray-100 transition">
+                        <i class="las la-male text-xl text-light-primary"></i>
+                        <span class="ml-6 text-secondary text-sm">Men</span>
+                    </a>
+                    <!-- single category end -->
+                    <!-- single category -->
+                    <a href="#" class="px-6 py-3 flex items-center hover:bg-gray-100 transition">
+                        <i class="las la-female text-xl text-light-primary"></i>
+                        <span class="ml-6 text-secondary text-sm">Women</span>
+                    </a>
+                    <!-- single category end -->
+                    <!-- single category -->
+                    <a href="#" class="px-6 py-3 flex items-center hover:bg-gray-100 transition">
+                        <i class="las la-plug text-xl text-light-primary"></i>
+                        <span class="ml-6 text-secondary text-sm">Electronics</span>
+                    </a>
+                    <!-- single category end -->
+                    <!-- single category -->
+                    <a href="#" class="px-6 py-3 flex items-center hover:bg-gray-100 transition">
+                        <i class="las la-headphones text-xl text-light-primary"></i>
+                        <span class="ml-6 text-secondary text-sm">Headphones</span>
+                    </a>
+                    <!-- single category end -->
+                    <!-- single category -->
+                    <a href="#" class="px-6 py-3 flex items-center hover:bg-gray-100 transition">
+                        <i class="las la-clock text-xl text-light-primary"></i>
+                        <span class="ml-6 text-secondary text-sm">Watches</span>
+                    </a>
+                    <!-- single category end -->
+                    <!-- single category -->
+                    <a href="#" class="px-6 py-3 flex items-center hover:bg-gray-100 transition">
+                        <i class="las la-desktop text-xl text-light-primary"></i>
+                        <span class="ml-6 text-secondary text-sm">Computer</span>
+                    </a>
+                    <!-- single category end -->
+                    <!-- single category -->
+                    <a href="#" class="px-6 py-3 flex items-center hover:bg-gray-100 transition">
+                        <i class="las la-mobile text-xl text-light-primary"></i>
+                        <span class="ml-6 text-secondary text-sm">Mobile</span>
+                    </a>
+                    <!-- single category end -->
+                </div>
+            </div>
+            <!-- all categories end -->
+
+            <!-- navbar links -->
+            <div class="flex items-center justify-between flex-grow pl-12">
+                <div class="flex items-center space-x-6 capitalize">
+                    <a href="#" class="text-white hover:text-primary transition">Home</a>
+                    <a href="#" class="text-white hover:text-primary transition">Shop</a>
+                    <a href="#" class="text-white hover:text-primary transition">About us</a>
+                    <a href="#" class="text-white hover:text-primary transition">Contact us</a>
+                </div>
+                <a href="#" class="text-white capitalize">
+                    <span class="mr-1"><i class="las la-phone"></i></span>
+                    call: +123 456 7890
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- banner -->
+    <div class="bg-cover bg-no-repeat bg-center py-36" style="background: url('imgs/banner-1.jpg');">
+        <div class="container">
+            <h1 class="text-6xl text-secondary font-medium mb-4 capitalize">
+                Best Collection For<br> Home Decoration 
+            </h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate<br> rhoncus pellentesque id integer neque, vel accumsan dolor diam.
+            </p>
+            <div class="mt-12">
+                <a href="#" class="bg-primary border border-primary text-white px-8 py-3 font-medium rounded-md hover:bg-transparent hover:text-primary transition">Shop Now</a>
+            </div>
+        </div>
+    </div>
+    <!-- banner end -->
+</body>
+</html>
